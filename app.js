@@ -6,9 +6,9 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
-// const foods = [];  
+const foods = [];  
 
-// console.log('Exercise 1 result:', foods);
+console.log('Exercise 1 result:', foods);
 
 
 
@@ -26,10 +26,10 @@ Complete Exercise 2 in the space below:
 
 
 
-// const foods = ['pizza', 'cheeseburger']
+const foods = ['pizza', 'cheeseburger']
 
 
-// console.log(foods);
+console.log(foods);
 
 
 
@@ -43,10 +43,10 @@ Complete Exercise 3 in the space below:
 */
 
 
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('taco')
+const foods = ['pizza', 'cheeseburger']
+foods.unshift('taco')
 
-// console.log(foods);
+console.log(foods);
 
 
 
@@ -62,10 +62,10 @@ Exercise 4: Access an array element
 
 Complete Exercise 4 in the space below:
 */
-// const foods = ['taco', 'pizza', 'cheeseburger']
-//  let favFood = foods[1];
+const foods = ['taco', 'pizza', 'cheeseburger']
+ let favFood = foods[1];
 
-// console.log(favFood);
+console.log(favFood);
 
 
 
@@ -79,11 +79,11 @@ Complete Exercise 5 in the space below:
 */
 
 
-// const foods = ['taco', 'pizza', 'cheeseburger']
-// let newFood = 'tofu';
-// foods.splice(2, 0, newFood);
+const foods = ['taco', 'pizza', 'cheeseburger']
+let newFood = 'tofu';
+foods.splice(2, 0, newFood);
 
-// console.log(foods);
+console.log(foods);
 
 
 
@@ -98,11 +98,12 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-// const foods = ['taco', 'pizza', 'tofu', 'cheeseburger', 'sushi', 'cupcake'];
-// const yummy = foods.slice(4,6)
+
+const foods = ['taco', 'pizza', 'tofu', 'cheeseburger', 'sushi', 'cupcake'];
+const yummy = foods.slice(4,6)
 
 
-// console.log( yummy);
+console.log( yummy);
 
 
 
@@ -119,11 +120,11 @@ Complete Exercise 8 in the space below:
 
 
 
-// const foods = ['taco', 'pizza', 'tofu', 'cheeseburger', 'sushi', 'cupcake'];
-// const soyIdx = foods.indexOf('tofu')
+const foods = ['taco', 'pizza', 'tofu', 'cheeseburger', 'sushi', 'cupcake'];
+const soyIdx = foods.indexOf('tofu')
 
 
-// console.log('Exercise 8 result:', soyIdx);
+console.log('Exercise 8 result:', soyIdx);
 
 
 
@@ -146,12 +147,12 @@ Complete Exercise 9 in the space below:
 
 
 
-// const foods = ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger'];
-// const allFoods = foods.join(' -> ');
+const foods = ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger'];
+const allFoods = foods.join(' -> ');
 
 
 
-// console.log(allFoods);
+console.log(allFoods);
 
 
 
@@ -170,13 +171,13 @@ Complete Exercise 10 in the space below:
 */
 
 
-// const foods = ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger'];
-// const hasSoup = foods.includes('soup')
+const foods = ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger'];
+const hasSoup = foods.includes('soup')
 
 
 
 
-// console.log('Exercise 10 result:', hasSoup);
+console.log(hasSoup);
 
 
 
@@ -193,14 +194,14 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-// const odds =[]
-// for (let i = 0; i < nums.length; i++)
-//     if (nums[i] % 2 !== 0) {
-//         odds.push(nums[i]);
-//     }
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds =[]
+for (let i = 0; i < nums.length; i++)
+    if (nums[i] % 2 !== 0) {
+        odds.push(nums[i]);
+    }
 
-// console.log(odds);
+console.log(odds);
 // I HAVE DEFINITELLY USED CHAT GPPT FOR THIS, BUT I UNDDERSTAND IT!
 
 
@@ -272,14 +273,6 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
-console.log('Exercise 13 result:', numList);
-
-const numArrays = [
-    [100, 5, 23],
-    [15, 21, 72, 9],
-    [45, 66],
-    [7, 81, 90]
-];
 
 
 const numList = numArrays[numArrays.length - 1];
@@ -287,6 +280,61 @@ const numList = numArrays[numArrays.length - 1];
 console.log(numList); 
 
 
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+const numArrays = [
+    [100, 5, 23],
+    [15, 21, 72, 9],
+    [45, 66],
+    [7, 81, 90]
+  ];
+  
+  const num = numArrays[2][1];
+
+console.log(num);
+
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+
+
+const numArrays = [
+    [100, 5, 23],
+    [15, 21, 72, 9],
+    [45, 66],
+    [7, 81, 90]
+  ];
+  
+  let total = 0;
+  
+  
+  numArrays.forEach(subArray => {
+    subArray.forEach(num => {
+      total += num; 
+    });
+  });
+
+console.log(total);
 
 
 
